@@ -47,32 +47,24 @@ GEM
     sinatra-activerecord (2.0.28)
       activerecord (>= 4.1)
       sinatra (>= 1.0)
-    sqlite3 (2.7.3-aarch64-linux-gnu)
-    sqlite3 (2.7.3-aarch64-linux-musl)
-    sqlite3 (2.7.3-arm-linux-gnu)
-    sqlite3 (2.7.3-arm-linux-musl)
-    sqlite3 (2.7.3-arm64-darwin)
-    sqlite3 (2.7.3-x86-linux-gnu)
-    sqlite3 (2.7.3-x86-linux-musl)
-    sqlite3 (2.7.3-x86_64-darwin)
-    sqlite3 (2.7.3-x86_64-linux-gnu)
-    sqlite3 (2.7.3-x86_64-linux-musl)
+    sqlite3 (1.7.3-aarch64-linux)
+    sqlite3 (1.7.3-arm-linux)
+    sqlite3 (1.7.3-arm64-darwin)
+    sqlite3 (1.7.3-x86-linux)
+    sqlite3 (1.7.3-x86_64-darwin)
+    sqlite3 (1.7.3-x86_64-linux)
     thread_safe (0.3.6)
     tilt (2.6.1)
     tzinfo (1.2.11)
       thread_safe (~> 0.1)
 
 PLATFORMS
-  aarch64-linux-gnu
-  aarch64-linux-musl
-  arm-linux-gnu
-  arm-linux-musl
+  aarch64-linux
+  arm-linux
   arm64-darwin
-  x86-linux-gnu
-  x86-linux-musl
+  x86-linux
   x86_64-darwin
-  x86_64-linux-gnu
-  x86_64-linux-musl
+  x86_64-linux
 
 DEPENDENCIES
   activerecord (~> 5.2)
@@ -80,7 +72,7 @@ DEPENDENCIES
   rake
   require_all
   sinatra-activerecord
-  sqlite3
+  sqlite3 (~> 1.4)
 
 BUNDLED WITH
    2.7.1
