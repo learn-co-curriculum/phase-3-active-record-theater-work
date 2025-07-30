@@ -5,4 +5,8 @@ class Audition < ActiveRecord::Base
   def role
     Role.find(role_id)
   end
+
+  def call_back
+    update(hired: true)
+  end
 end
