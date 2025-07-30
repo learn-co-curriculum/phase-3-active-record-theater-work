@@ -4,4 +4,8 @@ class Role < ActiveRecord::Base
   def actors 
     self.auditions.map { |audition| audition.actor }
   end
+
+  def locations 
+    self.auditions.map { |audition| audition.location }.uniq
+  end
 end
