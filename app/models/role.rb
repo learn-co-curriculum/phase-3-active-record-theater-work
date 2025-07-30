@@ -8,4 +8,8 @@ class Role < ActiveRecord::Base
   def locations 
     self.auditions.map { |audition| audition.location }.uniq
   end
+
+  def lead 
+    self.auditions.find_by(hired: true) || "no actor has been hired for this role"
+  end
 end
